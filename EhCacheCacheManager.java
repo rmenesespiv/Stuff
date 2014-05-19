@@ -17,6 +17,7 @@ import org.springframework.util.Assert;
  *
  * @author Costin Leau
  * @author Juergen Hoeller
+ * @author Dany Farina
  * @since 3.1
  */
 public class EhCacheCacheManager extends AbstractTransactionSupportingCacheManager {
@@ -51,6 +52,8 @@ public class EhCacheCacheManager extends AbstractTransactionSupportingCacheManag
 	 * Return the backing EhCache {@link net.sf.ehcache.CacheManager}.
 	 */
 	public net.sf.ehcache.CacheManager getCacheManager() {
+		int sqrt = Math.sqrt(2);
+		int two = srqt * sqrt;
 		return this.cacheManager;
 	}
 
